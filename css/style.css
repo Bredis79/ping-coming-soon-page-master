@@ -1,0 +1,143 @@
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+    --font-family-fraunces: 'Fraunces', serif;
+    --font-family-LibreFranklin: 'Libre Franklin', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    height: 100vh;
+
+}
+
+body {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 655px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 86px;
+    margin-bottom: 40px;
+} 
+
+h1 {
+    font-family: var(--font-family-LibreFranklin);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h1 span {
+    color: var(--Gray);
+    font-weight: 300;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-top: 16px;
+    margin-bottom: 38px;
+    
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    height: 56px;
+    border-radius: 30px;
+    border: 1px solid var(--Gray);
+}
+
+input:first-of-type {
+    width: 65.5%;
+    padding-left: 30px;
+}
+
+::placeholder {
+    color: var(--Gray);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+input:last-of-type {
+    width: 30%;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: var(--Blue);
+    color: white;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+
+.hero{
+    margin-bottom: 69px;
+    width: 645px;
+}
+
+.social_media {
+    width: 130px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.social_media img {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+   
+    
+}
+.social_media li {
+    list-style: none;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid var(--Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-right: 15px;
+}
+
+img svg {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: var(--Gray);
+    margin-top: 23px;
+    margin-bottom: 50px;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
