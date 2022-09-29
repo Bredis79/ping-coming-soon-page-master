@@ -128,7 +128,7 @@ input:last-of-type {
 }
 
 .social_media li:hover {
-    background-color: lightblue;   
+    border-color: var(--Blue);   
 }
 
 .copyright {
