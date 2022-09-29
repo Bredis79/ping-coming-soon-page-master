@@ -5,9 +5,6 @@
     --Gray: hsl(0, 0%, 59%);
     --Very-Dark-Blue: hsl(209, 33%, 12%);
 
-    --font-family-fraunces: 'Fraunces', serif;
-    --font-family-LibreFranklin: 'Libre Franklin', sans-serif;
-
 }
 
 * {
@@ -19,20 +16,23 @@
 html {
     font-size: 20px;
     height: 100vh;
-
+    width: 100vw;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 body {
-    width: 1440px;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    padding: 10px;
 }
 
 main {
-    width: 655px;
+    width: 100%;
+    max-width: 32.75rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,6 @@ main {
 } 
 
 h1 {
-    font-family: var(--font-family-LibreFranklin);
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -62,8 +61,10 @@ main p {
 }
 
 .input {
+    height: 60px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 90px;
 }
 
 input {
@@ -89,18 +90,18 @@ input:last-of-type {
     font-size: 0.8rem;
     background-color: var(--Blue);
     color: white;
-    font-weight: 300;
-    margin-bottom: 90px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px -5px var(--Blue);
+    cursor: pointer;
 }
 
 .hero{
     margin-bottom: 69px;
-    width: 645px;
+    width: 32,25rem;
 }
 
 .social_media {
-    width: 130px;
-    height: 35px;
+   height: 35px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -116,18 +117,14 @@ input:last-of-type {
 }
 .social_media li {
     list-style: none;
-    width: 31px;
-    height: 31px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid var(--Gray);
     display: flex;
     justify-content: center;
     align-items: center;
-     margin-right: 15px;
-}
-
-img svg {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    margin-right: 15px;
 }
 
 .copyright {
@@ -138,6 +135,36 @@ img svg {
 }
 
 
+.errorMobile {display:none; color: var(--Light-Red);}
+
+
+.visibleMobile {
+    display: block;
+    height: 80px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--Light-Red);
+    padding-top: 12px;
+}
+
+.errorDesktop {
+    display:none; 
+    color: var(--Light-Red);
+}
+
+.visibleDesktop {
+    display: block;
+    position: relative;
+    top: -23px;
+    right: 186px;
+    height: 60px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--Light-Red);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

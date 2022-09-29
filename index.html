@@ -7,12 +7,10 @@
   <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Libre+Franklin:wght@300;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="./css/query.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
 
@@ -27,22 +25,26 @@
     <p>
       Subscribe and get notified
     </p>
-    <section class="input">
+
+    <form class="input">
       <input type="email" name="email" id="email" placeholder="Your email address...">
-      <input type="text" id="btn" value="Notify Me">
-    </section>
+      <div class="errorMobile"></div>
+      <input type="submit" id="btn" value="Notify Me">
+    </form>
+    <div class="errorDesktop"></div>
+
 
     <img src="./images/illustration-dashboard.png" alt="illustration-dashboard" class="hero">
 
     <ul class="social_media">
 
-      <li><img src="./images/logo-facebook.svg" alt="icon-facebook"></li>
-      <li><img src="./images/logo-twitter.svg" alt="icon-twitter"></li>
-      <li><img src="./images/logo-instagram.svg" alt="icon-instagram"></li>
+      <li><a href="#"><img src="./images/facebook-f.svg" alt="icon-facebook"></a></li>
+      <li><a href="#"><img src="./images/logo-twitter.svg" alt="icon-twitter"></a></li>
+      <li><a href="#"><img src="./images/logo-instagram.svg" alt="icon-instagram"></a></li>
     </ul>
 
     <p class="copyright">
-    &copy; Copyright Ping. All rights reserved.
+      &copy; Copyright Ping. All rights reserved.
     </p>
   </main>
 
@@ -55,7 +57,7 @@
   </footer>
 
   <script src="./script/script.js"></script>
-  <script src="./script/query.js"></script>
+
 </body>
 
 </html>
