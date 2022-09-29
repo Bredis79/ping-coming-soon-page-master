@@ -127,6 +127,10 @@ input:last-of-type {
     margin-right: 15px;
 }
 
+.social_media li:hover {
+    background-color: lightblue;   
+}
+
 .copyright {
     font-size: 0.7rem;
     color: var(--Gray);
