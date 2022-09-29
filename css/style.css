@@ -128,7 +128,8 @@ input:last-of-type {
 }
 
 .social_media li:hover {
-    border: 2px solid var(--Blue);   
+    border: 2px solid var(--Blue); 
+    box-shadow: 0 2px 2px 2px var(--Blue);
 }
 
 .copyright {
