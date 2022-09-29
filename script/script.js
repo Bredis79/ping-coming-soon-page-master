@@ -18,7 +18,8 @@ btn.addEventListener("click", function(event){
    if (event.view.window.innerWidth > 700){
 
         if (event.path[1][0].value.match(emailValid)){
-               
+            errorDesktop.classList.remove("visibleDesktop")
+            inputEmail.style.border = ""
             } else {
                 inputEmail.style.border = "2px solid red"
                 formInput.style.marginBottom = "27px"
@@ -30,7 +31,8 @@ btn.addEventListener("click", function(event){
 // condition for resolution smaller than 700px
    } else {
         if (event.path[1][0].value.match(emailValid)){
-            
+            errorMobile.classList.remove("visibleMobile")
+            inputEmail.style.border = ""
         } else {
             inputEmail.style.border = "2px solid red"
             errorMobile.classList.add("visibleMobile")
